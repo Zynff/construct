@@ -4,7 +4,7 @@
     font-family: "Densa";
     src: url("construct/fontspring-demo-densa_black-webfont.woff2") format("woff2"),
          url("fontspring-demo-densa_black-webfont.woff") format("woff");
-    font-weight: lighter;
+    font-weight: black;
     font-style: normal;
     font-display: swap;
 }
