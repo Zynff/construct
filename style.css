@@ -2,9 +2,9 @@
 
 @font-face {
     font-family: "Densa";
-    src: url("construct/fontspring-demo-densa_black-webfont.woff2") format("woff2"),
+    src: url("fontspring-demo-densa_black-webfont.woff2") format("woff2"),
          url("fontspring-demo-densa_black-webfont.woff") format("woff");
-    font-weight: black;
+    font-weight: lighter;
     font-style: normal;
     font-display: swap;
 }
@@ -64,7 +64,7 @@ body {
     display: flex;
     padding: 16px 20px;
     color: #777777;
-    font-weight: black;
+    font-weight: lighter;
     font-size: 20px;
     transition: 0.3s ease;
     align-items: center;
@@ -117,7 +117,7 @@ opacity: 1;
     text-decoration: none;
     display: block;
     color: #777777;
-    font-weight: black;
+    font-weight: lighter;
     font-size: 20px;
     transition: 0.3s ease;
     padding: 16px;
@@ -134,7 +134,7 @@ button {
     width: 180px;
     color: #777777;
     font-size: 15px;
-    font-weight: black;
+    font-weight: lighter;
     font-size: 20px;
     padding: 16px 20px;
     background: #cecece;
@@ -165,7 +165,7 @@ button:hover {
     color: #2C57D9;
     background:transparent;
     text-decoration: none;
-    font-weight: black;
+    font-weight: lighter;
     font-size: 20px;
     transition: 0.3s ease;
 }
