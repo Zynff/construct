@@ -2,7 +2,7 @@
 
 @font-face {
     font-family: "Densa";
-    src: url("construct/fontspring-demo-densa_black-webfont.woff2") format("woff2"),
+    src: url("fontspring-demo-densa_black-webfont.woff2") format("woff2"),
          url("fontspring-demo-densa_black-webfont.woff") format("woff");
     font-weight: black;
     font-style: normal;
@@ -29,7 +29,7 @@ body {
     justify-content: space-between;
     background-color: #cecece;
     align-items: center;
-    padding: 0 9rem;
+    padding: 0 10rem;
 }
 
 .nav-logo {
@@ -40,6 +40,11 @@ body {
 .nav-logo img {
     width: 100%;
     object-fit: cover;
+}
+
+.nav-logo img:hover {
+    color: #2C57D9;
+    background-color: #2d58d927;
 }
 
 .nav-links-container {
@@ -64,7 +69,6 @@ body {
     display: flex;
     padding: 16px 20px;
     color: #777777;
-    font-weight: black;
     font-size: 20px;
     transition: 0.3s ease;
     align-items: center;
@@ -117,7 +121,6 @@ opacity: 1;
     text-decoration: none;
     display: block;
     color: #777777;
-    font-weight: black;
     font-size: 20px;
     transition: 0.3s ease;
     padding: 16px;
@@ -130,47 +133,43 @@ opacity: 1;
 
 /* hero section*/
 
+h1, h2, p{
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-container {
+    width: 100%;
+    height: 100vh;
+    padding: 0 8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
 button {
     width: 180px;
     color: #777777;
-    font-size: 15px;
-    font-weight: black;
     font-size: 20px;
     padding: 16px 20px;
     background: #cecece;
     border: 0;
-    outline: none;
     margin-top: 30px;
     cursor: pointer;
     transition: 0.3s ease;
 }
 
-h1, p {
-    font-family: "Roboto", sans-serif;
-}
-
 button:hover {
-   color:  #2C57D9;
-   background-color: rgba(44, 87, 217, 0.25)
-}
-
-.nav-contact {
-    margin-left: auto;
-}
-
-.contact-button {
-    display: inline-block;
-    padding: 10px 18px;
-    border: 2px solid #2C57D9;
-    color: #2C57D9;
-    background:transparent;
-    text-decoration: none;
-    font-weight: black;
-    font-size: 20px;
-    transition: 0.3s ease;
-}
-
-.contact-button:hover {
    color:  #2C57D9;
    background-color: rgba(44, 87, 217, 0.25)
 }
