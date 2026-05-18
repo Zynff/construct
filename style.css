@@ -27,7 +27,7 @@ body {
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
     display: flex;
     justify-content: space-between;
-    background-color: #cecece;
+    background-color: #2C57D9;
     align-items: center;
     padding: 0 10rem;
 }
@@ -40,17 +40,18 @@ body {
 .nav-logo img {
     width: 100%;
     object-fit: cover;
+    transition: 0.3s ease;
 }
 
 .nav-logo img:hover {
     color: #2C57D9;
-    background-color: #2d58d927;
+    background-color: #001E60;
 }
 
 .nav-links-container {
     flex: 1;
     display: flex;
-    justify-content: center;
+    justify-content: right;
     padding: 16px 0;
 }
 
@@ -68,15 +69,15 @@ body {
     text-decoration: none;
     display: flex;
     padding: 16px 20px;
-    color: #777777;
+    color: #fff;
     font-size: 20px;
     transition: 0.3s ease;
     align-items: center;
 }
 
 .nav-links > .nav-link-item:hover > a {
-color: #2C57D9;
-background-color: #2d58d927;
+color: #fff;
+background-color: #001E60;
 
 }
 
@@ -99,7 +100,7 @@ background-color: #2d58d927;
     top: 80%;
     left: 16px;
     overflow: hidden;
-    background-color: #cecece;
+    background-color: #2C57D9;
     transform: translateY(0);
     transition: 0.3s ease;
     visibility: hidden;
@@ -120,15 +121,15 @@ opacity: 1;
 .nav-links > .nav-link-item > .dropdown-menu > .dropdown-menu-item > a {
     text-decoration: none;
     display: block;
-    color: #777777;
+    color: #fff;
     font-size: 20px;
     transition: 0.3s ease;
     padding: 16px;
 }
 
 .nav-links > .nav-link-item > .dropdown-menu > .dropdown-menu-item > a:hover {
-   color:  #2C57D9;
-   background-color: #2d58d927
+   color:  #fff;
+   background-color: #001E60
 }
 
 /* hero section*/
@@ -159,10 +160,10 @@ h1, h2, p{
 
 button {
     width: 180px;
-    color: #777777;
+    color: #fff;
     font-size: 20px;
     padding: 16px 20px;
-    background: #cecece;
+    background: #2C57D9;
     border: 0;
     margin-top: 30px;
     cursor: pointer;
@@ -170,8 +171,8 @@ button {
 }
 
 button:hover {
-   color:  #2C57D9;
-   background-color: rgba(44, 87, 217, 0.25)
+   color:  #fff;
+   background-color: #001E60
 }
 
 .nav-container .background {
@@ -197,7 +198,7 @@ button:hover {
     display: none;
     font-size: 24px;
     margin-bottom: 5px;
-    color: #2C57D9
+    color: #fff
 }
 
 .nav-container .close-menu {
@@ -225,7 +226,7 @@ button:hover {
         height: 100%;
         top: 0;
         overflow-y: auto;
-        background-color: #777777;
+        background-color: #2C57D9;
         z-index: 999;
         padding: 15px;
         transition: all 0.3s ease-in;
