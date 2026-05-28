@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="x-icon" href="textures/logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Construct. | Engineering & Project Managing</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+<body>
+    <a href="contact.html" class="announcement-bar">
+        <p>Free quotes on contact before 6/25/2026 | Contact Now!</p>
+    </a>
+    <div class="nav-container">
+
+        <div class="nav-logo">
+            <a href="index.html"><img src="textures/FullLogo2.png" alt=""></a>
+        </div>
+        <i class="fa-solid fa-bars open-menu"></i>
+        <div class="background"></div>
+
+        <div class="nav-links-container">
+           <i class="fa-solid fa-xmark close-menu"></i>
+            
+            <ul class="nav-links">
+                <li class="nav-link-item dropdown-menu-branch">
+                    <a href="#" data-toggle="dropdown-menu">ABOUT<i class="fa-solid fa-chevron-down"></i></a>
+                
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-menu-item"><a href="who-we-are.html">WHO WE ARE</a></li>
+                        <li class="dropdown-menu-item"><a href="what-we-do.html">WHAT WE DO</a></li>
+                    </ul>
+
+                </li>
+                <li class="nav-link-item"><a href="projects.html">PROJECTS</a></li>
+                <li class="nav-link-item dropdown-menu-branch"><a href="#" data-toggle="dropdown-menu">SERVICES<i class="fa-solid fa-chevron-down"></i></a>
+                
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-menu-item"><a href="map.html">CONSTRUCTION</a></li>
+                        <li class="dropdown-menu-item"><a href="model.html">DEMOLITION</a></li>
+                        <li class="dropdown-menu-item"><a href="audio.html">RENOVATION</a></li>
+                        <li class="dropdown-menu-item"><a href="texture.html">PLANNING</a></li>
+                    </ul>
+                </li>
+                <li class="nav-link-item"><a href="contact.html">CONTACT US</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="contact-container">
+        <h1>CONTACT US</h2>
+        <form>
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" name="name" placeholder="Your full name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" name="email" placeholder="you@example.com" required>
+            </div>
+            <div class="form-group">
+                <label for="messag">Message</label>
+                <textarea name="message" placeholder="Type your message here." required></textarea>
+            </div>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
