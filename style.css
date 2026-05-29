@@ -1,5 +1,5 @@
+@import url('https://googleapis.com');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-
 @font-face {
     font-family: "Densa";
     src: url("fontspring-demo-densa_black-webfont.woff2") format("woff2"),
@@ -20,6 +20,8 @@
 :root {
     --color-primary: #0c0f16;
     --color-secondary: #050609;
+    --color-primary-blue: #303ef7;
+    --color-secondary-blue: #0F1243;
     --color-white: #fff;
     --color-white2: #cecece;
     --color-white3: #777777;
@@ -34,7 +36,7 @@ body {
 .announcement-bar {
     display: block;
     width: 100%;
-    background-color: var(--color-white);
+    background-color: var(--color-white1);
     text-align: center;
     padding: 10px 16px;
     text-decoration: none;
@@ -214,43 +216,53 @@ textarea::placeholder {
 /* hero section*/
 
 h1{
-    font-family: "Densa", "Roboto", sans-serif;
+    font-weight: bolder;
+    font-size: 50px;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: left;
+    align-items: left;
+    color: var(--color-white);
 }
 
-h2, h3, p{
-    font-family: "Roboto", sans-serif;
+h2{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: left;
+    align-items: left;
+    color: var(--color-white);
 }
 
-h4 {
+h3{
     font-family: "Roboto", sans-serif;
+    font-weight: 250;
+    font-size: 15px;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    color: var(--color-white);
 }
-
-
 
 .hero-container {
     position: relative;
     width: 100%;
-    min-height: 80vh;
+    min-height: 40vh;
+    background: var(--color-secondary-blue);
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: left;
     flex-grow: 1;
     overflow: hidden;
+    padding-left: 36vh;
 }
 
 .hero-content {
     display: flex;
     z-index: 2;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+    align-items: left;
+    justify-content: left;
+    text-align: left;
 }
 
 .hero-image {
@@ -318,6 +330,79 @@ button:hover {
     color: var(--color-white);
 }
 
+/* Services */
+
+.service {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: auto;
+    padding: 80px 0;
+}
+
+.service-header {
+    max-width: 1800px;
+    width: 100%;
+    padding: 0 60px 0 200px;
+    margin-bottom: 40px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.service-header h2 {
+    font-size: 38px;
+    font-weight: 700;
+    letter-spacing: 0.05rem;
+    color: var(--color-secondary-blue);
+    margin: 0;
+}
+
+.service-container {
+    max-width: 1600px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 60px;
+
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+    box-sizing: border-box;
+}
+
+.box {
+    padding: 40px;
+    color: var(--color-white);
+    text-align: left;
+    border-radius: 10px;
+
+    display: flex;
+    align-items: flex-start;
+    gap: 20px
+
+}
+
+.box i {
+    color: var(--color-primary-blue);
+    font-size: 24px;
+    margin-bottom: 0;
+    flex-shrink: 0;
+}
+
+.box h4 {
+    margin-bottom: 1.5rem;
+    font-size: 20px;
+    color: var(--color-secondary-blue);
+    font-family: 'Poppins', Helvetica, sans-serif;
+}
+
+.box p {
+    font-family: 'Poppins', Helvetica, sans-serif;
+    line-height: 24px;
+    letter-spacing: 0.025rem;
+    margin-bottom: 20px;
+    color: var(--color-black-1);
+}
 /* Footer */
 
 footer {
@@ -408,6 +493,16 @@ footer {
     .nav-container {
         justify-content: space-between;
         padding: 0 3rem;
+    }
+
+    .service-header {
+        padding: 0 30px 0 70px;
+        margin-bottom: 30px;
+    }
+
+    .service-container {
+        grid-template-columns: 1fr;
+        padding: 0 30px;
     }
 
     .nav-links-container {
@@ -501,6 +596,12 @@ footer {
         padding: 16px;
         cursor: pointer;
         width: fit-content;
+    }
+
+    .hero-container {
+        padding-left: 2rem;
+        padding-right: 2rem;
+        min-height: 50vh;
     }
 
     .footerNav ul {
