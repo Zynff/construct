@@ -2,8 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 @font-face {
     font-family: "Densa";
-    src: url("fontspring-demo-densa_black-webfont.woff2") format("woff2"),
-         url("fontspring-demo-densa_black-webfont.woff2") format("woff");
+    src: url("fonts/fontspring-demo-densa_black-webfont.woff2") format("woff2"),
+         url("fonts/fontspring-demo-densa_black-webfont.woff2") format("woff");
     font-weight: black;
     font-style: normal;
     font-display: swap;
