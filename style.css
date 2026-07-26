@@ -20,9 +20,9 @@
 }
 
 :root {
-    --color-primary: #FF8800;
+    --color-primary: #ff6f00;
     --color-primary-second: #E47A00;
-    --color-secondary: #2A5360;
+    --color-secondary: #2c6272;
     --color-secondary-second: #162c32;
     --color-white: #fff;
     --color-white2: #cecece;
@@ -53,25 +53,7 @@ img {
 /* text styles */
 
 h1 {
-    font-size: 72px;
-    font-family: "Cabin", sans-serif;
     color: var(--color-text-header);
-    line-height: 100%;
-    font-weight: bold;
-    letter-spacing: -1px;
-    margin: 16px 0;
-}
-
-p {
-    font-family: "Source Sans 3", sans-serif;
-    font-size: 14px;
-    line-height: 160%;
-}
-
-li {
-    font-family: "Source Sans 3", sans-serif;
-    font-size: 14px;
-    line-height: 160%;
 }
 
 /* navigation bar */
@@ -89,7 +71,7 @@ li {
     width: 100%;
     height: 85px;
     background-color: var(--color-primary);
-    box-shadow: 0 10px 0 0 var(--color-secondary), 0 20px 0 0 var(--color-white3);
+    box-shadow: 0 10px 0 0 var(--color-secondary); /* 0 20px 0 0 var(--color-white3); */
 }
 
 .nav-logo {
@@ -248,8 +230,8 @@ header .textArea h4::before {
   background: #000;
 }
 header .textArea h1 {
-  font-size: 4.5em;
-  font-weight: 500;
+  font-size: 5.5em;
+  font-weight: bolder;
   line-height: 1.1em;
   margin-bottom: 30px;
 }
@@ -270,11 +252,15 @@ header .textArea h1 strong::before {
   transform: translateY(-8px);
 }
 header .textArea p {
-  font-size: 1.2em;
-  letter-spacing: 0.1em;
-  line-height: 1.5em;
+  font-size: 1.75em;
+  line-height: 1.25em;
   margin-bottom: 35px;
-  opacity: 0.8;
+  opacity: 0.75;
+}
+header .textArea p strong {
+    font-family: "Densa";
+    font-weight: 600;
+    position: relative;
 }
 header .textArea .btnGroup .primary {
   margin-right: 15px;
@@ -371,11 +357,12 @@ header .imgArea .bg .rating {
   flex-direction: column;
 }
 header .imgArea .bg .rating span {
-  font-size: 2.5em;
+  font-size: 2em;
   font-weight: 600;
 }
 header .imgArea .bg .rating .star i {
-  color: #e65100;
+  color: var(--color-primary);
+  font-size: 1.4em;
 }
 header .imgArea .bg .rating small {
   font-size: 1.3em;
@@ -404,7 +391,7 @@ button {
     background: var(--color-primary);
     color: var(--color-white);
     text-decoration: none;
-    padding: 10px 20px;
+    padding: 15px 25px;
     border: none;
     display: inline-block;
     font-size: 25px;
@@ -413,19 +400,33 @@ button {
     transition: 0.3s ease;
 }
 
-.fa-arrow-up-right-from-square{
+.fa-arrow-right-long{
     display: flex;
     font-size: 15px;
     align-items: center;
     justify-content: center;
-    transform: translateY(-4px);
+    transform: translateY(-3px);
+}
+
+.fa-images{
+    display: flex;
+    font-size: 15px;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-3px);
 }
 
 button.primary {
   color: #fff;
+  border: 3px solid var(--color-primary);
+}
+button.secondary {
+  color: var(--color-secondary-second);
+  background-color: transparent;
+  border: 3px solid var(--color-secondary);
 }
 button:hover {
-    color: var(--color-white3);
+    transform: translateY(-3px);
 }
 
 /* end of buttons */
