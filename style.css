@@ -230,7 +230,7 @@ header .textArea h4::before {
   background: #000;
 }
 header .textArea h1 {
-  font-size: 5.5em;
+  font-size: 5em;
   font-weight: bolder;
   line-height: 1.1em;
   margin-bottom: 30px;
