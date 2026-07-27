@@ -617,7 +617,9 @@ button {
       align-items: center;
       justify-content: center;
     }
-
+    header .col-6 {
+      margin-top: 100px;
+    }
     header .textArea h4 {
         font-size: 1em;
     }
