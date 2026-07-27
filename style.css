@@ -21,7 +21,7 @@
 
 :root {
     --color-primary: #ff6f00;
-    --color-primary-second: #E47A00;
+    --color-primary-second: #b74f00;
     --color-secondary: #2c6272;
     --color-secondary-second: #162c32;
     --color-white: #fff;
@@ -61,7 +61,8 @@ h1 {
 .nav-container {
     display: flex;
     justify-content: center;
-    gap: 40rem;
+    flex-wrap: nowrap;
+    gap: 20rem;
     align-items: center;
     padding: 0 2rem;
     position: sticky;
@@ -79,6 +80,11 @@ h1 {
     height: 100%;
     padding: 1rem 0;
     padding-top: 20px;
+    transition: 0.3s ease;
+}
+
+.nav-logo:hover {
+  transform: scale(1.1);
 }
 
 .nav-logo img {
@@ -264,6 +270,7 @@ header .textArea p strong {
 }
 header .textArea .btnGroup .primary {
   margin-right: 15px;
+  margin-bottom: 15px;
 }
 header .textArea .tagLine {
   position: absolute;
@@ -271,12 +278,12 @@ header .textArea .tagLine {
   left: 0;
 }
 header .textArea .tagLine img {
-  width: 55px;
+  width: 35px;
   margin-right: 12px;
 }
 header .textArea .tagLine p {
   width: 195px;
-  font-size: 0.9em;
+  font-size: 1.2em;
   margin: 0;
 }
 header .imgArea {
@@ -292,17 +299,6 @@ header .imgArea .rating, header .imgArea .graph, header .imgArea .person {
 header .imgArea .bg {
   position: relative;
   transform: translateY(-35px);
-}
-header .imgArea .bg::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 100px;
-  height: 100px;
-  background: url(textures/logo.png) no-repeat center center;
-  transform: translate(50%, -50%);
-  opacity: 0.5;
 }
 header .imgArea .bg .imgGrid {
   display: grid;
@@ -406,6 +402,11 @@ button {
     align-items: center;
     justify-content: center;
     transform: translateY(-3px);
+    transition: 0.3s ease;
+}
+
+.fa-arrow-right-long:hover {
+  transform: translateX(3px);
 }
 
 .fa-images{
@@ -425,8 +426,16 @@ button.secondary {
   background-color: transparent;
   border: 3px solid var(--color-secondary);
 }
-button:hover {
-    transform: translateY(-3px);
+button.primary:hover {
+  transform: translateY(-3px);
+  background-color: var(--color-primary-second);
+  border: 3px solid var(--color-primary-second);
+}
+button.secondary:hover {
+  transform: translateY(-3px);
+  background-color: var(--color-secondary-second);
+  border: 3px solid var(--color-secondary-second);
+  color: var(--color-white);
 }
 
 /* end of buttons */
@@ -477,7 +486,7 @@ button:hover {
     }
 
     .container {
-        padding: 0 15px;
+        padding: 0 25px;
     }
 
     .dFlex .col-6 {
@@ -492,11 +501,6 @@ button:hover {
     .service-header {
         padding: 0 30px 0 70px;
         margin-bottom: 30px;
-    }
-
-    .service-container {
-        grid-template-columns: 1fr;
-        padding: 0 30px;
     }
 
     .nav-links-container {
@@ -592,20 +596,49 @@ button:hover {
         width: fit-content;
     }
 
+button {
+    background: var(--color-primary);
+    color: var(--color-white);
+    text-decoration: none;
+    padding: 15px 25px;
+    width: 100%;
+    border: none;
+    display: inline-block;
+    font-size: 25px;
+    font-family: "Densa", "Roboto", sans-serif;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+    header .imgArea {
+      height: calc(100vh - 70px);
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
     header .textArea h4 {
         font-size: 1em;
     }
     header .textArea h1 {
-        font-size: 3em;
+        font-size: 4em;
+    }
+    header .textArea p {
+        font-size: 1.5em;
     }
     header .textArea .tagLine p {
         font-size: 1.3em;
         width: calc(100% - 70px);
     }
+
     header .textArea .imgArea {
         display: none;
     }
     
+    header .imgArea .bg .imgGrid {
+      width: 390px;
+    }
     /* Footer */
 
 }
